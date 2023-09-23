@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    background-color: black;
+    justify-content: space-evenly;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    padding-top: 5px;
+}
+
+.footer-icons a {
+    margin: 2px 0 0 20px;
+    color: #fff;
+}
+
+.footer p {
+    padding-top: 5px;
+}
+
+.footer button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 0;
+    font-size: medium;
+}

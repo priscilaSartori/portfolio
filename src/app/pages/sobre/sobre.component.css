@@ -1,0 +1,36 @@
+.sobre{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 100%;
+}
+
+.sobre-perfil {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px 15px 30px;
+}
+
+.sobre-perfil-1 {
+    width: 200px;
+    border-radius: 100px;
+    margin: 0 0 10px 20px;
+}
+
+.sobre-perfil-2 {
+    width: 250px;
+}
+
+.sobre-perfil-3 {
+    width: 250px;
+}
+
+.sobre-descricao {
+    display: flex;
+    flex-direction: column;
+    margin: 90px;
+}
+
+.sobre-descricao p {
+    color: #fff;
+}

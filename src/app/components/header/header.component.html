@@ -1,0 +1,24 @@
+<mat-toolbar>
+    <div class="header-logo">
+        <span> < </span>
+            priscilaSartori - PS
+        <span> /> </span>
+    </div>
+    <div class="header-nav">
+        <nav> 
+            <button mat-menu-item (click)="changeHome()">Home</button>
+            <button mat-menu-item (click)="changeAbout()">Sobre</button>
+            <button mat-menu-item (click)="changeSkills()">Habilidades</button>
+            <!-- <button mat-menu-item (click)="changeExperiences()">Experiencias</button> -->
+            <button mat-menu-item (click)="changeProjects()">Projetos</button>
+        </nav>
+        <div>
+            <label class="switch">
+                <input type="checkbox" name="" id="" (click)="changeTheme()">
+                <span class="slider round"></span>
+                <mat-icon class="iconDark" *ngIf="!theme">dark_mode</mat-icon>
+                <mat-icon class="iconLigth" *ngIf="theme">light_mode</mat-icon>
+            </label>
+        </div>
+    </div> 
+</mat-toolbar>

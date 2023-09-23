@@ -1,0 +1,40 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    top: 10px;
+}
+
+.home-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items:flex-start;
+    /* height: 600px; */
+    padding: 150px 0 0 50px;
+}
+
+.home {
+    background-color: black;
+}
+
+.home-info p {
+    color: #fff;
+}
+
+.home-info h1 {
+    font-size: 50px; 
+    color: violet;
+}
+
+.home-info h2 {
+    color: #fff;
+}
+
+.home-img {
+    width: 50%;
+}
+
+.home-img img {
+    width: 600px;
+}
