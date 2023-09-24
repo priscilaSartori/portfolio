@@ -30,6 +30,10 @@ export class HeaderComponent {
   changeExperiences() {
     this.router.navigate(['/experience']);
   }
+
+  changeEducation() {
+    this.router.navigate(['/education']);
+  }
   
   changeProjects() {
     this.router.navigate(['/projects']);

@@ -1,0 +1,90 @@
+.card-education-experiencia {
+    width: 200px;
+    padding: 0 0 20px 0;
+}
+
+.education-index {
+    background-color: indigo;
+    display: flex;
+    flex-direction: row;
+    width: 950px;
+    height: 360px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.card-education-index-resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.card-education-index {
+    width: 300px;
+    padding: 10px 0 0 15px;
+}
+
+.card-education-index-info {
+    margin: 0 0 20px 0;
+    color: violet;
+}
+
+.card-education-index-techs {
+    color: #fff;
+    z-index: 1;
+}
+
+
+.card-education-index-description {
+    width: 600px;
+    padding: 0 10px 0 10px;
+    margin: 0 0 20px 0;
+    color: #fff;
+    z-index: 1;
+}
+
+.card-education-index-description h1 {
+    color: violet;
+}
+
+.card-education-index-description h3 {
+    color: violet;
+    margin: 0;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.habilidades button{
+    border: none;
+    background: transparent;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+}
+
+.card-education-index-description p {
+    text-align: justify;
+}
+
+.pdf-iframe {
+    padding-left: 20px;
+    top: 40%;
+    position: absolute;
+    width: 600px;
+    height: 440px;
+    border: none;
+    transform: scale(0.5);
+    transform-origin: top left;
+}
+
+.pdf-iframe:hover {
+    transform: scale(1.0);
+    top: 18px;
+    z-index: 1;
+    padding-left: 0;
+  }

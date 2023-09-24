@@ -1,1 +1,18 @@
-<p>experiencia works!</p>
+<section class="experiences">
+    <div class="experience">
+        <button type="button">
+            <img src="https://sabios.com.br/media/images/logo/logo_gw_121x20.png" (click)="changeExperience($event)" alt="Sabios">
+        </button>
+        <!-- <button type="button">
+            <img src="https://sabios.com.br/media/images/logo/logo_gw_121x20.png" (click)="changeExperience($event)" alt="Nova">
+        </button> -->
+    </div>
+    <div class="experience-info">
+        <div *ngIf="this.experience == 'Sabios'">
+            <app-sabios></app-sabios>
+        </div>
+        <!-- <div *ngIf="this.experience == 'Nova'">
+            <app-sobre></app-sobre>
+        </div> -->
+    </div>
+</section>

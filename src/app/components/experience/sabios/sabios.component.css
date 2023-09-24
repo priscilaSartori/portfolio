@@ -1,0 +1,36 @@
+.card-sabios {
+    background-color: indigo;
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    height: 360px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+    width: 100px;   
+    height: 100px;
+}
+
+.card-sabios-info {
+    width: 300px;
+    margin: 0 0 20px 0;
+    color: violet;
+}
+
+.card-sabios-description {
+    width: 650px;
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+
+.card-sabios-techs img {
+    margin: 10px;
+}

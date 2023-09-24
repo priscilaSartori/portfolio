@@ -1,4 +1,4 @@
-.experiences {
+.educations {
     width: 100%;
     height: 100%;
     background-color: black;
@@ -7,21 +7,22 @@
     justify-content: space-between;
 }
 
-.experience {
+.education {
     display: flex;
     flex-direction: column;
     padding: 20px 0 0 40px;
 }
 
-.experience button {
+.education button {
     width: 200px;
     height: 70px;
     background-color: indigo;
     border: none;
     margin: 5px 10px 5px 0px;
+    color: #fff;
 }
 
-.experience-info {
+.education-info {
     display: flex;
     align-items: center;
     width: 1050px;

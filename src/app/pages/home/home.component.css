@@ -3,6 +3,7 @@
     flex-direction: row;
     height: 100%;
     top: 10px;
+    background-color: black;
 }
 
 .home-info {
@@ -12,10 +13,6 @@
     align-items:flex-start;
     /* height: 600px; */
     padding: 150px 0 0 50px;
-}
-
-.home {
-    background-color: black;
 }
 
 .home-info p {
