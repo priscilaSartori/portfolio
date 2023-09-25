@@ -28,16 +28,20 @@ section {
 
 .projeto:hover {
     z-index: 1;
-    width: 420px;
-    height: 370px;
+    background-color: transparent;
+    border: none;
+
     .imagemProjeto-img{
-        width: 400px;
-        height: 300px;
+        position: relative;
+        top: -8px;
+        left: -15px;
+        width: 370px;
+        height: 320px;
     }
     .infoProjeto {
-        width: 400px;
+        display: none;
     }
-}
+} 
 
 .infoProjeto {
     width: 350px;
@@ -54,4 +58,9 @@ section {
 
 h3 {
     color: #fff;
+}
+
+.iconeProjeto {
+    display: flex;
+    justify-content: flex-end;
 }

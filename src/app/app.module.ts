@@ -33,41 +33,7 @@ import { DataAnalyticsAnalisarDadosComponent } from './components/education/data
 import { DataAnalyticsCompartilharDadosComponent } from './components/education/dataAnalytics/data-analytics-compartilhar-dados/data-analytics-compartilhar-dados.component';
 import { DataAnalyticsAnalisarDadosRComponent } from './components/education/dataAnalytics/data-analytics-analisar-dados-r/data-analytics-analisar-dados-r.component';
 import { DesenvolvimentoWebComponent } from './components/education/desenvolvimentoWeb/desenvolvimento-web/desenvolvimento-web.component';
-import { TodoListComponent } from './components/projects/todo-list/todo-list.component';
-import { PixelArtComponent } from './components/projects/pixel-art/pixel-art.component';
-import { TelaLoginComponent } from './components/projects/tela-login/tela-login.component';
-import { TrybewartsComponent } from './components/projects/trybewarts/trybewarts.component';
-import { ShoppingcartComponent } from './components/projects/shoppingcart/shoppingcart.component';
-import { TryunfoComponent } from './components/projects/tryunfo/tryunfo.component';
-import { TrybetunesComponent } from './components/projects/trybetunes/trybetunes.component';
-import { OnlineStoreComponent } from './components/projects/online-store/online-store.component';
-import { TrybeWalletComponent } from './components/projects/trybe-wallet/trybe-wallet.component';
-import { TriviaComponent } from './components/projects/trivia/trivia.component';
-import { StarwarsComponent } from './components/projects/starwars/starwars.component';
-import { MysqlOneForAllComponent } from './components/projects/mysql-one-for-all/mysql-one-for-all.component';
-import { TalkerManagerComponent } from './components/projects/talker-manager/talker-manager.component';
-import { StoreManagerComponent } from './components/projects/store-manager/store-manager.component';
-import { BlogsApiComponent } from './components/projects/blogs-api/blogs-api.component';
-import { MysqlAllForOneComponent } from './components/projects/mysql-all-for-one/mysql-all-for-one.component';
-import { DockerTodoListComponent } from './components/projects/docker-todo-list/docker-todo-list.component';
-import { TrybetsComponent } from './components/projects/trybets/trybets.component';
-import { TrybeHotelComponent } from './components/projects/trybe-hotel/trybe-hotel.component';
-import { TrybeGamesComponent } from './components/projects/trybe-games/trybe-games.component';
-import { TrybeBankComponent } from './components/projects/trybe-bank/trybe-bank.component';
-import { ApiRecipesComponent } from './components/projects/api-recipes/api-recipes.component';
-import { AluguelCarrosComponent } from './components/projects/aluguel-carros/aluguel-carros.component';
-import { TFCComponent } from './components/projects/tfc/tfc.component';
-import { RestaurantOrdersComponent } from './components/projects/restaurant-orders/restaurant-orders.component';
-import { TingComponent } from './components/projects/ting/ting.component';
-import { DeliveryAppComponent } from './components/projects/delivery-app/delivery-app.component';
-import { RecipesAppComponent } from './components/projects/recipes-app/recipes-app.component';
-import { MomentsComponent } from './components/projects/moments/moments.component';
-import { DashboardComponent } from './components/projects/dashboard/dashboard.component';
-import { AlgorithmsComponent } from './components/projects/algorithms/algorithms.component';
-import { CarShopComponent } from './components/projects/car-shop/car-shop.component';
-import { MongoDBComponent } from './components/projects/mongo-db/mongo-db.component';
-import { TrybersAndDragonsComponent } from './components/projects/trybers-and-dragons/trybers-and-dragons.component';
-import { TrybeSmithComponent } from './components/projects/trybe-smith/trybe-smith.component';
+import { DetalhesProjetosComponent } from './dialogos/detalhes-projetos/detalhes-projetos.component';
 
 @NgModule({
   declarations: [
@@ -95,41 +61,7 @@ import { TrybeSmithComponent } from './components/projects/trybe-smith/trybe-smi
     DataAnalyticsCompartilharDadosComponent,
     DataAnalyticsAnalisarDadosRComponent,
     DesenvolvimentoWebComponent,
-    TodoListComponent,
-    PixelArtComponent,
-    TelaLoginComponent,
-    TrybewartsComponent,
-    ShoppingcartComponent,
-    TryunfoComponent,
-    TrybetunesComponent,
-    OnlineStoreComponent,
-    TrybeWalletComponent,
-    TriviaComponent,
-    StarwarsComponent,
-    MysqlOneForAllComponent,
-    TalkerManagerComponent,
-    StoreManagerComponent,
-    BlogsApiComponent,
-    MysqlAllForOneComponent,
-    DockerTodoListComponent,
-    TrybetsComponent,
-    TrybeHotelComponent,
-    TrybeGamesComponent,
-    TrybeBankComponent,
-    ApiRecipesComponent,
-    AluguelCarrosComponent,
-    TFCComponent,
-    RestaurantOrdersComponent,
-    TingComponent,
-    DeliveryAppComponent,
-    RecipesAppComponent,
-    MomentsComponent,
-    DashboardComponent,
-    AlgorithmsComponent,
-    CarShopComponent,
-    MongoDBComponent,
-    TrybersAndDragonsComponent,
-    TrybeSmithComponent,
+    DetalhesProjetosComponent,
   ],
   imports: [
     BrowserModule,

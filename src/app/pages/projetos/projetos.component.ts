@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {MatDialog, MatDialogModule} from '@angular/material/dialog';
-import { PixelArtComponent } from 'src/app/components/projects/pixel-art/pixel-art.component';
-import { TodoListComponent } from 'src/app/components/projects/todo-list/todo-list.component';
+import { MatDialog } from '@angular/material/dialog';
+import { projectsData } from './projetos-data';
+import { ProjetosService } from 'src/app/services/projetos.service';
 
 @Component({
   selector: 'app-projetos',
@@ -9,18 +9,16 @@ import { TodoListComponent } from 'src/app/components/projects/todo-list/todo-li
   styleUrls: ['./projetos.component.css']
 })
 export class ProjetosComponent {
+  projects = projectsData;
 
   constructor(
     public dialog: MatDialog,
+    public projetosService: ProjetosService,
   ) { }
 
   displayInformation(event: any) {
-    if(event.target.alt == 'Projeto Todo List') {
-      this.dialog.open(TodoListComponent);
-    }
-    if(event.target.alt == 'Projeto Pixels Art') {
-      this.dialog.open(PixelArtComponent);
-    }
-
+    // console.log(event)
+    this.projetosService.selecionarProjeto(event);
+    // this.dialog.open(DetalhesProjetosComponent,event);
   }
 }

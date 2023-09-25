@@ -1,0 +1,67 @@
+section {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: 70%;
+    padding: 40px;
+    background-color: indigo;
+    border-radius: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+}
+
+.projectPreview {
+    width: 600px;
+    height: 100%;
+}
+
+video {
+    width: 600px;
+    height: 350px;
+}
+
+.projectPreview-btn {
+    top: 87%;
+    position: fixed;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectPreview-btn a {
+    width: 150px;
+    height: 30px;
+}
+
+.projectPreview-btn button {
+    background-color: #8257E6;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #8257E6;
+}
+
+.projectInfo {
+    width: 390px;
+    height: 100%;
+    color: #fff;
+    padding-left: 40px;
+}
+
+h1 {
+    color: violet;
+}
+
+.projectInfo-titleClose {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectInfo-titleClose button {
+    border: none;
+    background: transparent;
+    color: #8257E6;
+}
