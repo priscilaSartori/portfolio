@@ -3,7 +3,12 @@
     flex-direction: row;
     height: 100%;
     top: 10px;
+    /* background-color: black; */
+    background-image: url('https://d3un0zjblgkxzb.cloudfront.net/drupal/public/styles/iwc_banner_internas_2000x384_webp/public/media/hero/2023-02/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg.webp?VersionId=4r4yJ5w_u2tTG2HAIiXBStDgszwP_thC&itok=46LDaQw_');
+    background-repeat: no-repeat;
+    background-position:left;
     background-color: black;
+    background-size: cover;
 }
 
 .home-info {
@@ -33,5 +38,6 @@
 }
 
 .home-img img {
-    width: 600px;
+    width: 750px;
+    height: 400px;
 }
