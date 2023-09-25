@@ -4,11 +4,6 @@
     z-index: -1;
 }
 
-/* section h1 {
-    margin: 0;
-    padding: 30px;
-} */
-
 .main{
     width: 1200px;
     height: auto;
@@ -19,6 +14,7 @@
     justify-content: space-around;
     align-content: flex-start;
     z-index: -1;
+    flex-wrap: wrap;
 }
 
 .box{
@@ -64,7 +60,8 @@
     content: "";
     position: absolute;
     inset: 5px;
-    background: rgb(7, 13, 30);
+    background: indigo;
+    /* background: rgb(7, 13, 30); */
     border-radius: 20px;
 }
 
