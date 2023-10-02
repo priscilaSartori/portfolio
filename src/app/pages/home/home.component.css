@@ -41,3 +41,20 @@
     width: 750px;
     height: 400px;
 }
+
+.cursor {
+    border-left: 2px solid violet; /* Adiciona uma linha vertical para representar o cursor */
+    height: 1.1em; /* Ajusta a altura para corresponder à linha de texto */
+    margin-left: 5px; /* Ajusta o espaçamento entre a última letra e o cursor */
+  }
+  
+  .blink {
+    animation: blink 0.7s infinite alternate;
+  }
+  
+  @keyframes blink {
+    to {
+      border-color: transparent; /* Faz o cursor piscar */
+    }
+  }
+  
