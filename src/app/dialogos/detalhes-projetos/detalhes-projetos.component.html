@@ -5,13 +5,13 @@
             Seu navegador não suporta a reprodução de vídeos.
           </video>
         <div class="projectPreview-btn">
-            <a href={{projects[projectId].linkProjeto}} target="_blank" rel="noopener noreferrer">
+            <a *ngIf="projects[projectId].linkProjeto" href={{projects[projectId].linkProjeto}} target="_blank" rel="noopener noreferrer">
                 <button type="button">Acessar Projeto</button>
             </a>
-            <a href={{projects[projectId].linkRepositorio}} target="_blank" rel="noopener noreferrer">
+            <a *ngIf="projects[projectId].linkRepositorio" href={{projects[projectId].linkRepositorio}} target="_blank" rel="noopener noreferrer">
                 <button type="button">Acessar repositório</button>
             </a>
-            <a href={{projects[projectId].linkLinkedin}} target="_blank" rel="noopener noreferrer">
+            <a *ngIf="projects[projectId].linkLinkedin" href={{projects[projectId].linkLinkedin}} target="_blank" rel="noopener noreferrer">
                 <button type="button">Ver post no Linkedin</button>
             </a>
         </div>
@@ -23,13 +23,15 @@
                 <mat-icon>cancel</mat-icon>
             </button>
         </div>
-        <h4>{{projects[projectId].empresa}}</h4>
-        <P>{{projects[projectId].descricao}}</P>
-        <h4>Habilidades desenvolvidas</h4>
-        <ul *ngFor="let habilidade of projects[projectId].habilidades">
-            <li>{{habilidade}}</li>
-        </ul>
-        <p>Realizado em {{projects[projectId].data}}</p>
+        <div class="projectInfo-details">
+            <h4>{{projects[projectId].empresa}}</h4>
+            <P>{{projects[projectId].descricao}}</P>
+            <h4>Habilidades desenvolvidas</h4>
+            <ul *ngFor="let habilidade of projects[projectId].habilidades">
+                <li>{{habilidade}}</li>
+            </ul>
+            <p>Realizado em {{projects[projectId].data}}</p>
+        </div>
     </div>
 </section>
 
