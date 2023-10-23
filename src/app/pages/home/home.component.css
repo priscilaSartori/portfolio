@@ -2,36 +2,31 @@
     display: flex;
     flex-direction: row;
     height: 100%;
-    top: 10px;
-    /* background-color: black; */
-    background-image: url('https://img.freepik.com/fotos-gratis/plano-de-fundo-de-programacao-com-pessoa-trabalhando-com-codigos-no-computador_23-2150010125.jpg?w=740&t=st=1696711015~exp=1696711615~hmac=9ff6642c7189c1a57ada5bf95c44aa55f3608ebe41fc159c8318438c04285938');
-    /* background-image: url('https://d3un0zjblgkxzb.cloudfront.net/drupal/public/styles/iwc_banner_internas_2000x384_webp/public/media/hero/2023-02/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg.webp?VersionId=4r4yJ5w_u2tTG2HAIiXBStDgszwP_thC&itok=46LDaQw_'); */
-    background-repeat: no-repeat;
-    background-position:left;
-    background-color: black;
-    background-size: cover;
+    width: 1200px;
 }
 
 .home-info {
     display: flex;
     flex-direction: column;
     width: 90%;
-    /* align-items:flex-start; */
-    align-items: flex-end;
-    padding: 150px 0 0 50px;
+    align-items: flex-start;
+    padding: 100px 0 0px 50px;
 }
 
 .home-info p {
-    color: #fff;
+    color: #1a2744;
+    font-size: 30px;
 }
 
 .home-info h1 {
-    font-size: 50px; 
-    color: violet;
+    font: 500 4em Poppins,sans-serif; 
+    color: #1a2744;
+    margin-top: 3px;
+    max-width: 38rem;
 }
 
 .home-info h2 {
-    color: #fff;
+    color: #1a2744;
 }
 
 .home-img {
@@ -39,12 +34,13 @@
 }
 
 .home-img img {
+    padding-top: 10px;
     width: 750px;
     height: 400px;
 }
 
 .cursor {
-    border-left: 2px solid violet; /* Adiciona uma linha vertical para representar o cursor */
+    border-left: 2px solid #50E3C2; /* Adiciona uma linha vertical para representar o cursor */
     height: 1.1em; /* Ajusta a altura para corresponder à linha de texto */
     margin-left: 5px; /* Ajusta o espaçamento entre a última letra e o cursor */
   }

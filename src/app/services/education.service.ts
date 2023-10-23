@@ -11,6 +11,5 @@ export class EducationService {
 
   atualizarEducation(evento: string) {
     this.education = evento;
-    console.log(this.education)
   }
 }

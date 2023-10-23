@@ -34,6 +34,7 @@ import { DataAnalyticsCompartilharDadosComponent } from './components/education/
 import { DataAnalyticsAnalisarDadosRComponent } from './components/education/dataAnalytics/data-analytics-analisar-dados-r/data-analytics-analisar-dados-r.component';
 import { DesenvolvimentoWebComponent } from './components/education/desenvolvimentoWeb/desenvolvimento-web/desenvolvimento-web.component';
 import { DetalhesProjetosComponent } from './dialogos/detalhes-projetos/detalhes-projetos.component';
+import { DesenvolvimentoWebCSharpComponent } from './components/education/desenvolvimentoWeb/desenvolvimento-web-csharp/desenvolvimento-web-csharp.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { DetalhesProjetosComponent } from './dialogos/detalhes-projetos/detalhes
     DataAnalyticsAnalisarDadosRComponent,
     DesenvolvimentoWebComponent,
     DetalhesProjetosComponent,
+    DesenvolvimentoWebCSharpComponent,
   ],
   imports: [
     BrowserModule,

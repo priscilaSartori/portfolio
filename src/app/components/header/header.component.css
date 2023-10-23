@@ -1,17 +1,19 @@
 mat-toolbar {
   display: flex;
   justify-content: space-between;
-  background-color: black;
   z-index: 1;
+  border-bottom: #fff solid 1px;
+  background-color: #fff;
+  box-shadow: 0 4px 2px -2px #c8cbd6;
 }
 
 .header-logo {
-  color: #fff;
+  color: #1a2744;
 }
 
 .header-logo span {
   padding: 0 10px 0 10px;
-  color:violet;
+  color:#50E3C2;
 }
 
 .header-nav {
@@ -24,46 +26,43 @@ mat-toolbar {
 .header-nav nav button {
   background-color: transparent;
   border: none;
-  font-size: large;
-  color: #fff;
+  font: 20px Poppins,sans-serif;
+  color: #1a2744;
 }
 
-.iconLigth {
+/* .iconLigth {
   position: absolute;
   color: indigo;
   z-index: 1;
   left: 33px;
   top: 7px;
   font-size: 20px;
-  /* colocar para aparecer mais lento */
-}
+} */
 
-.iconDark {
+/* .iconDark {
   position: absolute;
   color: indigo;
   z-index: 1;
   top: 7px;
   font-size: 20px;
-  /* colocar para aparecer mais lento */
+} */
 
-}
-
-.switch {
+/* .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-}
+} */
   
   /* Hide default HTML checkbox */
-  .switch input {
+  /* .switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+  } */
   
   /* The slider */
-  .slider {
+  /* .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -73,9 +72,9 @@ mat-toolbar {
     background-color: violet;
     -webkit-transition: .4s;
     transition: .4s;
-  }
+  } */
   
-  .slider:before {
+  /* .slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -85,9 +84,9 @@ mat-toolbar {
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
+  } */
   
-  input:checked + .slider {
+  /* input:checked + .slider {
     background-color: violet;
   }
   
@@ -99,16 +98,16 @@ mat-toolbar {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
+  } */
   
   /* Rounded sliders */
-  .slider.round {
+  /* .slider.round {
     border-radius: 34px;
   }
   
   .slider.round:before {
     border-radius: 50%;
-  }
+  } */
 
   .scroll {
     display: block;
