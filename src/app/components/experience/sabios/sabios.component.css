@@ -1,11 +1,13 @@
 .card-sabios {
-    background-color: indigo;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     width: 950px;
     height: 360px;
     border-radius: 10px;
     padding: 30px;
+    box-shadow: 3px 4px 3px 3px #50E3C2;
+    border: #c8cbd6 solid 1px;
 }
 
 header {
@@ -22,13 +24,13 @@ header img {
 .card-sabios-info {
     width: 300px;
     margin: 0 0 20px 0;
-    color: violet;
+    color: #50E3C2;
 }
 
 .card-sabios-description {
     width: 650px;
     margin: 0 0 20px 0;
-    color: #fff;
+    color: #1a2744;
 }
 
 .card-sabios-techs img {
