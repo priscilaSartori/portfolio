@@ -15,9 +15,10 @@
 .experience button {
     width: 200px;
     height: 70px;
-    background-color: indigo;
+    background-color: #50E3C2;
     border: none;
     margin: 5px 10px 5px 0px;
+    box-shadow: 1px 1px 1px 1px;
 }
 
 .experience-info {

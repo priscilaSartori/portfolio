@@ -4,13 +4,14 @@
 }
 
 .education-index {
-    background-color: indigo;
     display: flex;
     flex-direction: row;
     width: 950px;
     height: 360px;
     border-radius: 10px;
     padding: 30px;
+    box-shadow: 3px 4px 3px 3px #50E3C2;
+    border: #c8cbd6 solid 1px;
 }
 
 .card-education-index-resume {
@@ -27,11 +28,11 @@
 
 .card-education-index-info {
     margin: 0 0 20px 0;
-    color: violet;
+    color: #50E3C2;
 }
 
 .card-education-index-techs {
-    color: #fff;
+    color: #1a2744;
     z-index: 1;
 }
 
@@ -40,16 +41,16 @@
     width: 600px;
     padding: 0 10px 0 10px;
     margin: 0 0 20px 0;
-    color: #fff;
+    color: #1a2744;
     z-index: 1;
 }
 
 .card-education-index-description h1 {
-    color: violet;
+    color: #50E3C2;
 }
 
 .card-education-index-description h3 {
-    color: violet;
+    color: #50E3C2;
     margin: 0;
 }
 
@@ -62,7 +63,7 @@
 .habilidades-1 button{
     border: none;
     background: transparent;
-    color: #fff;
+    color: #1a2744;
     text-align: left;
     padding: 5px;
 }

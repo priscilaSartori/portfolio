@@ -1,7 +1,6 @@
 .educations {
     width: 100%;
     height: 100%;
-    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,10 +15,11 @@
 .education button {
     width: 200px;
     height: 70px;
-    background-color: indigo;
+    background-color: #50E3C2;
     border: none;
     margin: 5px 10px 5px 0px;
-    color: #fff;
+    color: #1a2744;
+    box-shadow: 1px 1px 1px 1px;
 }
 
 .education-info {
