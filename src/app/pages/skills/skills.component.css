@@ -1,5 +1,6 @@
 .skill {
-    background-color: black;
+    position: absolute;
+    left: 60px;
     width: 100%;
     z-index: -1;
 }
@@ -11,7 +12,7 @@
     padding-left: 50px;
     padding-right: 50px;
     gap: 2rem;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-content: flex-start;
     z-index: -1;
     flex-wrap: wrap;
@@ -21,6 +22,9 @@
     width: 12rem;
     height: 10rem;
     border-radius: 25px;
+    border: #c8cbd6 solid 1px;
+    background-color: #fff;
+    box-shadow: 2px 4px 2px 2px #50E3C2;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -41,7 +45,7 @@
 
 .box h4 {
     z-index: 1;
-    color: white;
+    color: #1a2744;
 }
 
 .box span::before{
@@ -51,7 +55,8 @@
     height: 17rem;
     left: 4.5rem;
     top: -40%;
-    background: violet;
+    background-color: #0FFA7D;
+    /* background: linear-gradient(170deg,#0FFA7D 0%,#0FF2FA 100%); */
     animation: 6s linear 0s infinite normal none running anim;
     border-radius: 10px;
 }
@@ -60,7 +65,7 @@
     content: "";
     position: absolute;
     inset: 5px;
-    background: indigo;
+    background: #fff;
     /* background: rgb(7, 13, 30); */
     border-radius: 20px;
 }
@@ -75,7 +80,7 @@ h2 {
     font-size: 30px;
     position: relative;
     padding: 30px 0 10px 30px;
-    color: violet;
+    color: #50E3C2;
     z-index: 0;
     opacity: 1;
 }
@@ -93,5 +98,5 @@ h1 {
     font-size: 2.2rem;
     font-weight: 800;
     margin: 2rem 0px;
-    color: violet;
+    color: #50E3C2;
 }
