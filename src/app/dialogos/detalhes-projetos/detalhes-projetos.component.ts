@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { projectsData } from './../../pages/projetos/projetos-data';
+import { projectsData } from '../../mocks/projetos-data';
 import { MatDialogRef } from '@angular/material/dialog';
 import { ProjetosService } from 'src/app/services/projetos.service';
 

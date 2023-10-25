@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { MatDialogModule } from '@angular/material/dialog'
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -74,6 +75,7 @@ import { DesenvolvimentoWebCSharpComponent } from './components/education/desenv
     MatIconModule,
     NgxPageScrollModule,
     MatDialogModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

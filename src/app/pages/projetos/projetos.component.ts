@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { projectsData } from './projetos-data';
+import { projectsData } from '../../mocks/projetos-data';
 import { ProjetosService } from 'src/app/services/projetos.service';
+import { habilidadesData, alternativasData } from 'src/app/mocks/projetos';
 
 @Component({
   selector: 'app-projetos',
@@ -10,6 +11,11 @@ import { ProjetosService } from 'src/app/services/projetos.service';
 })
 export class ProjetosComponent {
   projects = projectsData;
+  habilidades = habilidadesData;
+  alternativas = alternativasData;
+  habilidadeSelecionada: string = 'Todas';
+  alternativaSelecionada: string = 'TODAS';
+  projetosFiltrados = projectsData;
 
   constructor(
     public dialog: MatDialog,
@@ -17,8 +23,23 @@ export class ProjetosComponent {
   ) { }
 
   displayInformation(event: any) {
-    // console.log(event)
     this.projetosService.selecionarProjeto(event);
-    // this.dialog.open(DetalhesProjetosComponent,event);
+  }
+
+  capturarSelecao() {
+    if (this.alternativaSelecionada !== 'TODAS') {
+      this.projetosFiltrados = this.projects.filter((projeto) => projeto.modulo === this.alternativaSelecionada);
+      return this.projetosFiltrados;
+    } return this.projetosFiltrados = projectsData;
+  }
+
+  aplicarFiltros() {
+    this.projetosFiltrados = this.projects.filter(projeto => {
+      if (this.habilidadeSelecionada === 'Todas') {
+        return true;
+      } else {
+        return projeto.stack.includes(this.habilidadeSelecionada);
+      }
+    });
   }
 }

@@ -1,16 +1,35 @@
 <section>
-    <div *ngFor="let project of projects">
-        <div class="projeto" (click)="displayInformation(project.id)">
-            <div class="imagemProjeto">
-                <img class="imagemProjeto-img" src={{project.imagem}} alt="{{project.name}}">
+    <div class="filtro">
+        <div class="alternativa">
+            <h3>Escolha uma alternativa:</h3>
+            <div *ngFor="let alternativa of alternativas">
+                <label>
+                    <input type="radio" [(ngModel)]="alternativaSelecionada" [value]="alternativa" (change)="capturarSelecao()">
+                    {{ alternativa }}
+                </label>
             </div>
-            <div class="infoProjeto">
-                <h3>{{project.name}}</h3>
-                <div class="iconeProjeto">
-                    <div *ngFor="let icone of project.icones">
-                        <img class="icone" src="{{icone}}"/>
-                    </div>
+        </div>
+        <div>
+            <label for="habilidade">Filtrar por stack</label>
+            <select [(ngModel)]='habilidadeSelecionada' (change)="aplicarFiltros()">
+                <option *ngFor="let habilidade of habilidades" id="habilidade" [value]="habilidade">{{ habilidade }}</option>
+            </select>
+        </div>
+    </div>
+    <div class="projetos">
+        <div *ngFor="let project of projetosFiltrados">
+            <div class="projeto" (click)="displayInformation(project.id)">
+                <div class="imagemProjeto">
+                    <img class="imagemProjeto-img" src={{project.imagem}} alt="{{project.name}}">
                 </div>
+                <div class="infoProjeto">
+                    <h3>{{project.name}}</h3>
+                    <div class="iconeProjeto">
+                        <div *ngFor="let icone of project.icones">
+                            <img class="icone" src="{{icone}}"/> 
+                        </div> 
+                    </div> 
+                </div> 
             </div>
         </div>
     </div>
