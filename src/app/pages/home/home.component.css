@@ -2,15 +2,18 @@
     display: flex;
     flex-direction: row;
     height: 100%;
-    width: 1200px;
+    width: 100%;
+    justify-content: center;
 }
 
 .home-info {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 40%;
     align-items: flex-start;
-    padding: 100px 0 0px 50px;
+    padding: 0 0 0px 80px;
+    justify-content: center;
+    align-items: start;
 }
 
 .home-info p {
@@ -30,7 +33,10 @@
 }
 
 .home-img {
-    width: 50%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-img img {
@@ -55,3 +61,12 @@
     }
   }
   
+  @media screen and (max-width: 900px) {
+    .home-img {
+        display: none;
+    }
+
+    .home-info {
+        width: 500px;
+    }
+  }
