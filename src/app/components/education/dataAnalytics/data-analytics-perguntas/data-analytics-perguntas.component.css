@@ -1,3 +1,8 @@
+.card-education-experiencia {
+    width: 200px;
+    padding: 0 0 20px 0;
+}
+
 .education-index {
     display: flex;
     flex-direction: row;
@@ -21,11 +26,6 @@
     padding: 10px 0 0 15px;
 }
 
-.card-education-experiencia {
-    width: 200px;
-    padding: 0 0 20px 0;
-}
-
 .card-education-index-info {
     margin: 0 0 20px 0;
     color: #50E3C2;
@@ -35,7 +35,6 @@
     color: #1a2744;
     z-index: 1;
 }
-
 
 .card-education-index-description {
     width: 600px;
@@ -54,14 +53,10 @@
     margin: 0;
 }
 
-.habilidades {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .card-education-index-description p {
     text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .pdf-iframe {
@@ -80,4 +75,49 @@
     top: 18px;
     z-index: 1;
     padding-left: 0;
-  }
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 650px;
+}
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 900px) {
+    .pdf-iframe {
+        display: none;
+    }
+
+    .education-index {
+        flex-direction: column;
+        width: 500px;
+        height: auto;
+    }
+
+    .card-education-index-description p {
+        width: 500px;
+        flex-wrap: wrap;
+    }
+
+    .card-education-index-description h1 {
+        width: 500px;
+        flex-wrap: wrap;
+    }
+
+    .card-education-index-description h1 {
+        width: 500px;
+        flex-wrap: wrap;
+    }
+    
+    hr {
+        display: none;
+    }
+
+    .habilidades {
+        width: 500px;
+        flex-wrap: wrap;
+    }
+
+}

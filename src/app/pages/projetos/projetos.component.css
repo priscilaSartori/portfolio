@@ -47,25 +47,6 @@ section {
     border: #c8cbd6 solid 2px;
 }
 
-.projeto:hover {
-    z-index: 1;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-
-    .imagemProjeto-img{
-        position: relative;
-        top: -8px;
-        left: -15px;
-        width: 370px;
-        height: 320px;
-        box-shadow: 3px 4px 3px 3px;
-    }
-    .infoProjeto {
-        display: none;
-    }
-} 
-
 .infoProjeto {
     width: 350px;
     display: flex;
@@ -86,4 +67,34 @@ h3 {
 .iconeProjeto {
     display: flex;
     justify-content: flex-end;
+}
+
+/* Estilos para telas pequenas */
+@media screen and (min-width: 900px) {
+    .projeto:hover {
+        z-index: 1;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    
+        .imagemProjeto-img{
+            position: relative;
+            top: -8px;
+            left: -15px;
+            width: 370px;
+            height: 320px;
+            box-shadow: 3px 4px 3px 3px;
+        }
+        .infoProjeto {
+            display: none;
+        }
+    } 
+}
+
+@media screen and (max-width: 900px) {
+    .filtro {
+        flex-direction: column;
+        width: 95%;
+        margin-left: 20px;
+    }
 }

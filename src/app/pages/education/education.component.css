@@ -25,5 +25,22 @@
 .education-info {
     display: flex;
     align-items: center;
-    width: 1050px;
+    justify-content: center;
+    width: 90%;
+}
+
+/* Estilos para telas pequenas (dispositivos móveis) */
+@media screen and (max-width: 900px) {
+    .educations {
+        flex-direction: column;
+    }
+
+    .education {
+        flex-direction: row;
+    }
+
+    .education-info {
+        margin: 10px 0 0 20px;
+        justify-content: start;
+    }
 }

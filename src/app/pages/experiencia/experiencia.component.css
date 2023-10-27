@@ -24,5 +24,19 @@
 .experience-info {
     display: flex;
     align-items: center;
-    width: 1050px;
+    width: 90%;
+    justify-content: center;
+}
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 900px) {
+    .experiences {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience-info {
+        margin: 10px 0 0 20px;
+        justify-content: start;
+    }
 }

@@ -53,26 +53,10 @@
     margin: 0;
 }
 
-.habilidades {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.habilidades-1 button{
-    border: none;
-    background: #50E3C2;
-    color: #1a2744;
-    text-align: left;
-    padding: 5px;
-    width: 200px;
-    height: 40px;
-    margin: 0 5px 5px 0;
-    box-shadow: 1px 1px 1px 1px;
-}
-
 .card-education-index-description p {
     text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .pdf-iframe {
@@ -91,4 +75,56 @@
     top: 18px;
     z-index: 1;
     padding-left: 0;
-  }
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 650px;
+}
+
+.habilidades-1 button{
+    border: none;
+    background: #50E3C2;
+    color: #1a2744;
+    text-align: left;
+    padding: 5px;
+    width: 200px;
+    height: 40px;
+    margin: 0 5px 5px 0;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 900px) {
+    .pdf-iframe {
+        display: none;
+    }
+
+    .education-index {
+        flex-direction: column;
+        width: 500px;
+        height: auto;
+    }
+
+    .card-education-index-description p {
+        width: 500px;
+        flex-wrap: wrap;
+    }
+
+    .card-education-index-description h1 {
+        width: 500px;
+        flex-wrap: wrap;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .habilidades {
+        width: 500px;
+        flex-wrap: wrap;
+    }
+
+}

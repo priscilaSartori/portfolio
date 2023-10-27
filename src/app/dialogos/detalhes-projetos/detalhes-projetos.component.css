@@ -1,8 +1,7 @@
 section {
     display: flex;
     flex-direction: row;
-    width: 70%;
-    height: 70%;
+    max-width: 1100px;
     padding: 30px;
     background-color: #fff;
     border-radius: 1rem;
@@ -11,11 +10,6 @@ section {
     left: 50%;
     z-index: 5;
     transform: translate(-50%, -50%);
-}
-
-.projectPreview {
-    width: 600px;
-    height: 100%;
 }
 
 video {
@@ -89,3 +83,18 @@ h1 {
   .projectInfo-details::-webkit-scrollbar-thumb:hover {
     background-color: #0FFA7D; /* Cor da alça da barra de rolagem ao passar o mouse */
   }
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 900px) {
+    section {
+        flex-direction: column;
+        width: 450px;
+        margin: 30px 20px 20px 50px;
+        position:-ms-page;
+        height: 350px;
+    }
+
+    .projectPreview {
+        display: none;
+    }
+}
