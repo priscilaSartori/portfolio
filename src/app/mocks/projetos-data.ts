@@ -815,7 +815,7 @@ export const projectsData = [
         name: 'JORNADA DO HEROI',
         imagem: 'https://drive.google.com/uc?id=1FxJb4J0dpCl2h1KvkNRoEG3NhFjSrS-1',
         icones: [react, materialUi],
-        iframe: 'https://drive.google.com/file/d/1JbKFj4o13Xo68yVERU-iCklJiHiBv556',
+        iframe: 'https://drive.google.com/uc?id=1JbKFj4o13Xo68yVERU-iCklJiHiBv556',
         linkProjeto: 'https://jornada-do-heroi-seven.vercel.app/',
         linkRepositorio: 'https://github.com/priscilaSartori/jornada-do-heroi',
         linkLinkedin: '',
