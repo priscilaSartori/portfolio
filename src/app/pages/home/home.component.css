@@ -1,19 +1,14 @@
 .home {
     display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 90%;
 }
 
 .home-info {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    align-items: flex-start;
-    padding: 0 0 0px 80px;
-    justify-content: center;
-    align-items: start;
+    max-width: 50%;
+    text-align: left;
 }
 
 .home-info p {
@@ -25,7 +20,7 @@
     font: 500 4em Poppins,sans-serif; 
     color: #1a2744;
     margin-top: 3px;
-    max-width: 38rem;
+    width: 500px;
 }
 
 .home-info h2 {
@@ -33,40 +28,37 @@
 }
 
 .home-img {
-    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .home-img img {
-    padding-top: 10px;
-    width: 750px;
-    height: 500px;
+    max-width: 80%;
+    height: auto;
 }
 
-.cursor {
-    border-left: 2px solid #50E3C2; /* Adiciona uma linha vertical para representar o cursor */
-    height: 1.1em; /* Ajusta a altura para corresponder à linha de texto */
-    margin-left: 5px; /* Ajusta o espaçamento entre a última letra e o cursor */
-  }
-  
-  .blink {
-    animation: blink 0.7s infinite alternate;
-  }
-  
-  @keyframes blink {
-    to {
-      border-color: transparent; /* Faz o cursor piscar */
+@media screen and (max-width: 1050px) {
+    .home {
+        flex-direction: column;
+        margin-top: 50px;
     }
-  }
-  
-  @media screen and (max-width: 900px) {
-    .home-img {
-        display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
     }
 
     .home-info {
-        width: 500px;
+        max-width: 100%;
+        margin-bottom: 20px;
     }
-  }
+
+    .home-info h1 {
+        width: 350px; 
+        font: 500 40px Poppins,sans-serif;
+    }
+}
