@@ -1,14 +1,16 @@
 .sabios {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
 .card-sabios {
+    box-sizing: border-box;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 360px;
+    min-height: 360px;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 3px 4px 3px 3px #50E3C2;
@@ -18,28 +20,66 @@
 header {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
-header img {
-    width: 100px;   
-    height: 100px;
+.card-sabios-info {
+    flex: 1;
+    padding-right: 10px;
+    color: #50E3C2;
+    margin-left: 20px;
 }
 
-.card-sabios-info {
-    width: 300px;
-    margin: 0 0 20px 0;
-    color: #50E3C2;
+header img {
+    max-width: 100%;
+    height: auto;
 }
 
 .card-sabios-description {
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 30px 0 20px 0;
     color: #1a2744;
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.card-sabios-techs img {
-    margin: 10px;
+.card-sabios-techs {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 1rem;
+}
+
+@media (max-width: 523px) {
+    .card-sabios {
+        padding: 20px;
+    }
+
+    .card-sabios-info {
+        font-size: small;
+    }
+
+    .card-sabios-techs img {
+        width: 30px;
+    }
+
+    h1 {
+        font-size: large;
+        margin: 0;
+    }
+
+    .card-sabios-info p {
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 440px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sabios {
+        margin-bottom: 30px;
+    }
 }

@@ -9,34 +9,42 @@
 .experience {
     display: flex;
     flex-direction: column;
-    padding: 20px 0 0 40px;
+    padding: 20px 0 0 25px;
+    flex: 1;
 }
 
 .experience button {
-    width: 200px;
+    min-width: 75px;
+    width: 100%;
     height: 70px;
     background-color: #50E3C2;
     border: none;
     margin: 5px 10px 5px 0px;
+    padding: 10px;
     box-shadow: 1px 1px 1px 1px;
 }
 
 .experience-info {
+    height: 100%;
     display: flex;
     align-items: center;
-    width: 90%;
     justify-content: center;
+    flex: 4;
 }
 
-/* Estilos para telas pequenas */
-@media screen and (max-width: 900px) {
+@media (max-width: 440px) {
     .experiences {
         display: flex;
         flex-direction: column;
     }
 
-    .experience-info {
-        margin: 10px 0 0 20px;
-        justify-content: start;
+    .experience {
+        display: flex;
+        flex-direction: row;   
+        margin-bottom: 20px; 
+    }
+
+    .experience button {
+        width: 20%;
     }
 }
