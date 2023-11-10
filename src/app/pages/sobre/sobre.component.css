@@ -56,7 +56,7 @@
     box-shadow: 3px 4px 3px 3px #50E3C2;
     border: #c8cbd6 solid 1px;
     width: 60%;
-    height: 80%;
+    height: 90%;
 }
 
 .sobre-descricao p {
@@ -65,14 +65,12 @@
     padding-top:20px;
 }
 
-/* Estilos para telas pequenas (dispositivos móveis) */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
     .sobre {
         flex-direction: column;
         justify-content: center;
         height: auto;
         width: auto;
-        
     }
 
     .sobre-perfil {
@@ -86,6 +84,14 @@
 
     .sobre-descricao {
         width: 85%;
-        margin: 10px 0 0 20px;
+        height: 90%;
+        margin: 10px 0 30px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sobre-perfil {
+        padding-top: 30px;
+        flex-direction: column;
     }
 }
