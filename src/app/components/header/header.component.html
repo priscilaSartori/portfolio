@@ -1,10 +1,10 @@
-<mat-toolbar>
+<mat-toolbar fxLayout="row" fxLayout.xs="column" class="full-width-toolbar">
     <div class="header-logo">
         <span> < </span>
             priscilaSartori - PS
         <span> /> </span>
     </div>
-    <div class="header-nav">
+    <div class="header-nav" fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
         <nav> 
             <button mat-menu-item (click)="changeHome()">Home</button>
             <button mat-menu-item (click)="changeAbout()">Sobre</button>
