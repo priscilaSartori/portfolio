@@ -9,6 +9,7 @@
 .home-info {
     max-width: 50%;
     text-align: left;
+    padding-left: 50px;
 }
 
 .home-info p {
