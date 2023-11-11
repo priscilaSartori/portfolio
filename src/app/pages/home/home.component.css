@@ -50,15 +50,25 @@
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        margin-bottom: 100px;
     }
 
     .home-info {
-        max-width: 100%;
+        width: 100%;
         margin-bottom: 20px;
     }
 
     .home-info h1 {
+        font-size: 24px;
+        word-wrap: break-word;
         width: 350px; 
         font: 500 40px Poppins,sans-serif;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .home-info h1 {
+        font-size: 22px;
     }
 }

@@ -85,3 +85,9 @@ h2 {
         gap: 1rem;
     }
 }
+
+@media (max-width: 600px) {
+    .skill {
+        margin-bottom: 100px;
+    }
+}
