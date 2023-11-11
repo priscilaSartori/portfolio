@@ -13,7 +13,6 @@ export class ProjetosService {
 
   selecionarProjeto(evento: number) {
     this.projetoId = evento;
-    console.log(this.projetoId)
     this.dialog.open(DetalhesProjetosComponent);
   }
 }

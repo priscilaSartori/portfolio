@@ -1,0 +1,16 @@
+<section class="educations">
+    <div class="education">
+        <button type="button" (click)="changeEducation($event)" value="Ciências Econômicas">
+            Ciências Econômicas
+        </button>
+        <button type="button" (click)="changeEducation($event)" value="Desenvolvimento Web">
+            Desenvolvimento Web
+        </button>
+        <button type="button" (click)="changeEducation($event)" value="Certificado Profissional Google Data Analytics">
+            Data Analytics
+        </button>
+    </div>
+    <div class="education-info" *ngIf="selectedEducation">
+        <app-educations [education]="selectedEducation" (moduleClicked)="handleModuleClick($event)"></app-educations>
+    </div>
+</section>

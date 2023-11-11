@@ -1,0 +1,34 @@
+<section class="education">
+    <div class="card-education">
+        <header>
+            <div>
+                <img class="card-education-experiencia" src={{education.Empresa}} alt={{education.Titulo}}>
+                <div class="card-education-index-info">
+                    <p>Nível: {{education.Nivel}}</p>
+                    <p>Status: {{education.Status}}</p>
+                </div>
+            </div>
+            <img class="pdf-iframe" src={{education.Certificado}} alt={{education.Titulo}}>
+        </header>
+        <div class="card-sabios-description">
+            <div>
+                <h1>{{education.Titulo}}</h1>
+                <p>{{education.Descricao}}</p>
+            </div>
+            <hr>    
+            <div class="card-education-modulos" *ngIf="education.Modulos && education.Modulos.length > 0">
+                <div *ngFor="let modulos of education.Modulos">
+                    <button type="button" value={{modulos.value}} (click)="toggleComponent(modulos.value)">{{modulos.name}}</button>
+                </div>
+            </div>
+            <div class="card-education-habilidades" *ngIf="education.habilidades && education.habilidades.length > 0">
+                <h3>Habilidades técnicas:</h3>
+                <div>
+                    <ul class="habilidades">
+                        <li *ngFor="let habilidade of education.habilidades">{{habilidade}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
