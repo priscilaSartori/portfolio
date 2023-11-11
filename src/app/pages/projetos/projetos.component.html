@@ -1,16 +1,13 @@
 <section>
     <div class="filtro">
         <div class="alternativa">
-            <h3>Escolha uma alternativa:</h3>
-            <div *ngFor="let alternativa of alternativas">
-                <label>
-                    <input type="radio" [(ngModel)]="alternativaSelecionada" [value]="alternativa" (change)="capturarSelecao()">
-                    {{ alternativa }}
-                </label>
-            </div>
+            <label for="alternativa">Filtrar por módulo: </label>
+            <select [(ngModel)]='alternativaSelecionada' (change)="capturarSelecao()">
+                <option *ngFor="let alternativa of alternativas" id="alternativa" [value]="alternativa">{{ alternativa }}</option>
+            </select>
         </div>
-        <div>
-            <label for="habilidade">Filtrar por stack</label>
+        <div class="alternativa">
+            <label for="habilidade">Filtrar por stack: </label>
             <select [(ngModel)]='habilidadeSelecionada' (change)="aplicarFiltros()">
                 <option *ngFor="let habilidade of habilidades" id="habilidade" [value]="habilidade">{{ habilidade }}</option>
             </select>

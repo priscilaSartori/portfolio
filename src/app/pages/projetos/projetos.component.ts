@@ -13,7 +13,7 @@ export class ProjetosComponent {
   projects = projectsData;
   habilidades = habilidadesData;
   alternativas = alternativasData;
-  habilidadeSelecionada: string = 'Todas';
+  habilidadeSelecionada: string = 'TODAS';
   alternativaSelecionada: string = 'TODAS';
   projetosFiltrados = projectsData;
 

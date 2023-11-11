@@ -14,8 +14,6 @@ section {
 
 .projeto {
     width: 370px;
-    /* border: 3px solid indigo;
-    background-color: indigo; */
     margin: 10px;
     box-shadow: 1px 2px 1px 1px;
     border: #c8cbd6 solid 3px;
@@ -24,13 +22,16 @@ section {
 .alternativa {
     display: flex;
     flex-direction: row;
+    margin-bottom: 15px;
 }
 
 .filtro {
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 20px;
+    width: 100%;
 }
 
 .imagemProjeto {
@@ -69,32 +70,51 @@ h3 {
     justify-content: flex-end;
 }
 
-/* Estilos para telas pequenas */
-@media screen and (min-width: 900px) {
-    .projeto:hover {
-        z-index: 1;
-        background-color: transparent;
-        border: none;
-        box-shadow: none;
-    
-        .imagemProjeto-img{
-            position: relative;
-            top: -8px;
-            left: -15px;
-            width: 370px;
-            height: 320px;
-            box-shadow: 3px 4px 3px 3px;
-        }
-        .infoProjeto {
-            display: none;
-        }
-    } 
+@media screen and (max-width: 791px) {
+    .alternativa {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+    }
+
+    select {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 791px) {
+    .filtro {
+        align-items: flex-start;
+    }
+
+    .alternativa {
+        flex-direction: column;
+    }
+
+    .projeto {
+        width: 270px;
+    }
+
+    .imagemProjeto {
+        width: 250px;
+        height: 150px;
+    }
+
+    .imagemProjeto-img{
+        width: 250px;
+        height: 150px;
+    }
+
+    .infoProjeto {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
     .filtro {
         flex-direction: column;
-        width: 95%;
-        margin-left: 20px;
+        align-items: center;
     }
 }
