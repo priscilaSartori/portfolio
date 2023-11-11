@@ -1,130 +1,113 @@
+.education {
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 10px;
+}
+
+.card-education {
+    width: 90%;
+    padding: 2em;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    margin: 10px 0 50px 0;
+    border-radius: 10px;
+    box-shadow: 3px 4px 3px 3px #50E3C2;
+    border: #c8cbd6 solid 1px;
+}
+
 .card-education-experiencia {
     width: 200px;
     padding: 0 0 20px 0;
 }
 
-.education-index {
+.card-education header {
     display: flex;
+    /* flex-direction: column; */
     flex-direction: row;
-    width: 950px;
-    height: 360px;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 3px 4px 3px 3px #50E3C2;
-    border: #c8cbd6 solid 1px;
-}
-
-.card-education-index-resume {
-    display: flex;
-    flex-direction: column;
+    /* justify-content: flex-start; */
     justify-content: space-between;
-    padding-right: 10px;
-}
-
-.card-education-index {
-    width: 300px;
-    padding: 10px 0 0 15px;
-}
-
-.card-education-index-info {
-    margin: 0 0 20px 0;
-    color: #50E3C2;
-}
-
-.card-education-index-techs {
-    color: #1a2744;
-    z-index: 1;
-}
-
-.card-education-index-description {
-    width: 600px;
-    padding: 0 10px 0 10px;
-    margin: 0 0 20px 0;
-    color: #1a2744;
-    z-index: 1;
-}
-
-.card-education-index-description h1 {
-    color: #50E3C2;
-}
-
-.card-education-index-description h3 {
-    color: #50E3C2;
-    margin: 0;
-}
-
-.card-education-index-description p {
-    text-align: justify;
-    display: flex;
-    flex-wrap: wrap;
+    /* margin-right: 20px; */
 }
 
 .pdf-iframe {
-    padding-left: 20px;
-    top: 40%;
-    position: absolute;
-    width: 600px;
-    height: 440px;
+    width: 300px;
+    height: 200px;
     border: none;
-    transform: scale(0.5);
+    transform: scale(1.0);
     transform-origin: top left;
 }
 
 .pdf-iframe:hover {
-    transform: scale(1.0);
+    transform: scale(2.0);
+    position: absolute;
     top: 18px;
     z-index: 1;
     padding-left: 0;
 }
 
-.habilidades {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 650px;
+.card-sabios-description {
+    font-size: 1em;
 }
 
-.habilidades-1 button{
+.card-education-modulos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card-education-modulos button {
+    width: 130px;
+    height: 70px;
+    background-color: #50E3C2;
     border: none;
-    background: #50E3C2;
-    color: #1a2744;
-    text-align: left;
-    padding: 5px;
-    width: 200px;
-    height: 40px;
-    margin: 0 5px 5px 0;
+    margin: 3px;
     box-shadow: 1px 1px 1px 1px;
 }
 
-/* Estilos para telas pequenas */
-@media screen and (max-width: 900px) {
-    .pdf-iframe {
-        display: none;
+@media screen and (max-width: 800px) {
+    .card-education {
+        width: 85%;
     }
 
-    .education-index {
+    .card-education header {
+        display: flex;
         flex-direction: column;
-        width: 500px;
-        height: auto;
+        align-items: center;
+    }
+}
+
+@media (max-width: 630px) {
+    .education {
+        top: 100px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .card-education {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 440px) {
+    .education {
+        top: 180px;
     }
 
-    .card-education-index-description p {
-        width: 500px;
-        flex-wrap: wrap;
+    .card-education-modulos button {
+        width: 120px;
     }
+}
 
-    .card-education-index-description h1 {
-        width: 500px;
-        flex-wrap: wrap;
+@media (max-width: 380px) {
+    .pdf-iframe {
+        width: 180px;
+        height: 100px;
     }
-
-    hr {
-        display: none;
-    }
-
-    .habilidades {
-        width: 500px;
-        flex-wrap: wrap;
-    }
-
 }
