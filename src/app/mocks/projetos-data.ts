@@ -39,7 +39,7 @@ export const projectsData = [
     {
         id: 1,
         name: 'DASHBOARD',
-        imagem: 'https://github.com/priscilaSartori/dashboard/blob/main/src/assets/login.png?raw=true',
+        imagem: 'https://github.com/priscilaSartori/dashboard/blob/main/src/assets/home.png?raw=true',
         icones: [typeScript, angular],
         iframe: '',
         linkProjeto: '',
@@ -55,7 +55,7 @@ export const projectsData = [
             'Exibição de perfil de usuário',
             'Navegação e exibição de estatísticas sociais usando o framework Highcharts.',
         ],
-        data: '',
+        data: '08/12/2023',
     },
     {
         id: 2,
