@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { projectsData } from '../../mocks/projetos-data';
 import { ProjetosService } from 'src/app/services/projetos.service';
 import { habilidadesData, alternativasData } from 'src/app/mocks/projetos';
+import { icones } from 'src/app/mocks/stacks';
 
 @Component({
   selector: 'app-projetos',
@@ -41,5 +42,15 @@ export class ProjetosComponent {
         return projeto.stack.includes(this.habilidadeSelecionada);
       }
     });
+  }
+ 
+  obterNomeIcone(icone: string): string {
+    for (const [key, value] of Object.entries(icones)) {
+      if (value === icone) {
+        return key;
+      }
+    }
+  
+    return 'Nome Desconhecido';
   }
 }

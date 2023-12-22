@@ -23,7 +23,9 @@
                     <h3>{{project.name}}</h3>
                     <div class="iconeProjeto">
                         <div *ngFor="let icone of project.icones">
-                            <img class="icone" src="{{icone}}"/> 
+                            <span class="icone-container" title="{{ obterNomeIcone(icone) }}">
+                                <img class="icone" src="{{icone}}" alt="Ícone"/>
+                            </span>
                         </div> 
                     </div> 
                 </div> 
