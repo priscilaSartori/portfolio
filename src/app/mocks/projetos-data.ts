@@ -151,10 +151,10 @@ export const projectsData = [
     {
         id: 7,
         name: 'FINANCEIRO 360',
-        imagem: '',
+        imagem: 'https://github.com/priscilaSartori/financeiro360/blob/master/src/assets/orcamentoMensal.png?raw=true',
         icones: [icones.Angular],
-        iframe: '',
-        linkProjeto: '',
+        iframe: 'https://drive.google.com/uc?export=download&id=1ib3uv2GfyrHrycEW5N479oVbpujg200y',
+        linkProjeto: 'https://financeiro360.vercel.app/',
         linkRepositorio: 'https://github.com/priscilaSartori/financeiro360',
         linkLinkedin: '',
         empresa: 'PESSOAL',
