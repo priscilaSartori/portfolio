@@ -14,8 +14,8 @@ export class ProjetosComponent {
   projects = projectsData;
   habilidades = habilidadesData;
   alternativas = alternativasData;
-  habilidadeSelecionada: string = 'TODAS';
-  alternativaSelecionada: string = 'TODAS';
+  habilidadeSelecionada: string = 'TODOS';
+  alternativaSelecionada: string = 'TODOS';
   projetosFiltrados = projectsData;
 
   constructor(
@@ -27,22 +27,28 @@ export class ProjetosComponent {
     this.projetosService.selecionarProjeto(event);
   }
 
-  capturarSelecao() {
-    if (this.alternativaSelecionada !== 'TODAS') {
+  filtrarModulo() {
+    if (this.alternativaSelecionada !== 'TODOS') {
       this.projetosFiltrados = this.projects.filter((projeto) => projeto.modulo === this.alternativaSelecionada);
       return this.projetosFiltrados;
     } return this.projetosFiltrados = projectsData;
   }
 
-  aplicarFiltros() {
-    this.projetosFiltrados = this.projects.filter(projeto => {
-      if (this.habilidadeSelecionada === 'Todas') {
-        return true;
-      } else {
-        return projeto.stack.includes(this.habilidadeSelecionada);
-      }
-    });
+  filtrarStack() {
+    if (this.habilidadeSelecionada !== 'TODOS') {
+      this.projetosFiltrados = this.projects.filter((projeto) => projeto.stack.includes(this.habilidadeSelecionada));
+      console.log(typeof this.habilidadeSelecionada, this.projetosFiltrados)
+      return this.projetosFiltrados;
+    } return this.projetosFiltrados = projectsData;
   }
+    // this.projetosFiltrados = this.projects.filter(projeto => {
+    //   if (this.habilidadeSelecionada === 'TODOS') {
+    //     return true;
+    //   } else {
+    //     return projeto.stack.includes(this.habilidadeSelecionada);
+    //   }
+    // });
+  // }
  
   obterNomeIcone(icone: string): string {
     for (const [key, value] of Object.entries(icones)) {

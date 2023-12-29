@@ -2,13 +2,13 @@
     <div class="filtro">
         <div class="alternativa">
             <label for="alternativa">Filtrar por módulo: </label>
-            <select [(ngModel)]='alternativaSelecionada' (change)="capturarSelecao()">
+            <select [(ngModel)]='alternativaSelecionada' (change)="filtrarModulo()">
                 <option *ngFor="let alternativa of alternativas" id="alternativa" [value]="alternativa">{{ alternativa }}</option>
             </select>
         </div>
         <div class="alternativa">
             <label for="habilidade">Filtrar por stack: </label>
-            <select [(ngModel)]='habilidadeSelecionada' (change)="aplicarFiltros()">
+            <select [(ngModel)]='habilidadeSelecionada' (change)="filtrarStack()">
                 <option *ngFor="let habilidade of habilidades" id="habilidade" [value]="habilidade">{{ habilidade }}</option>
             </select>
         </div>

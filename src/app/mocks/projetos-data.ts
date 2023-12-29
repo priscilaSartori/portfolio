@@ -12,7 +12,7 @@ export const projectsData = [
         linkLinkedin: '',
         empresa: 'CODANTE',
         modulo: 'FRONTEND',
-        stack: ['Javascript', 'Tailwind', 'React'],
+        stack: ['JAVASCRIPT', 'TAILWIND', 'REACT'],
         descricao: 'Desenvolvimento de uma tela de login incrivelmente bonita e responsiva usando o framework Tailwind CSS.',
         habilidades: [
             'Framework Tailwind CSS',
@@ -31,7 +31,7 @@ export const projectsData = [
         linkLinkedin: '',
         empresa: 'PESSOAL',
         modulo: '',
-        stack: ['Angular', 'Typescript'],
+        stack: ['ANGULAR', 'TYPESCRIPT'],
         descricao: 'Dashboard para acompanhamento das redes sociais de digital influencers, proporcionando uma visão abrangente e aprimorada',
         habilidades: [
             'Login',
@@ -52,7 +52,7 @@ export const projectsData = [
         linkLinkedin: '',
         empresa: 'PESSOAL',
         modulo: 'FRONTEND',
-        stack: ['Javascript', 'React'],
+        stack: ['JAVASCRIPT', 'REACT'],
         descricao: 'Desenvolvimento de uma aplicação web para o combate de cartas de heróis.',
         habilidades: [
             'Listagem de heróis',
@@ -72,7 +72,7 @@ export const projectsData = [
         linkLinkedin: 'https://www.linkedin.com/posts/priscila-sartori_contact-list-activity-7128389657934934016-jN--?utm_source=share&utm_medium=member_desktop',
         empresa: 'PESSOAL',
         modulo: 'FRONTEND',
-        stack: ['Javascript', 'React'],
+        stack: ['JAVASCRIPT', 'REACT'],
         descricao: 'Desenvolvimento de uma aplicação de listagem de contatos usando React.js e Context API.',
         habilidades: [
             'Chamada à API',
@@ -96,7 +96,7 @@ export const projectsData = [
         linkLinkedin: '',
         empresa: 'PESSOAL',
         modulo: 'FRONTEND',
-        stack: ['Typescript', 'Angular'],
+        stack: ['ANGULAR', 'TYPESCRIPT'],
         descricao: 'Desenvolvimento de uma aplicação para gerenciar e exibir produtos de uma loja de roupas',
         habilidades: [
             'Adicionar novos produtos',
@@ -117,7 +117,7 @@ export const projectsData = [
         linkLinkedin: '',
         empresa: 'PESSOAL',
         modulo: 'FRONTEND',
-        stack: ['Typescript', 'Angular'],
+        stack: ['ANGULAR', 'TYPESCRIPT'],
         descricao: 'Desenvolvimento de uma aplicação com uma tela de extrato de conta corrente, onde podemos listar os lançamentos da conta corrente feitos de forma avulsa ou não.',
         habilidades: [
             'Filtro',
@@ -141,7 +141,7 @@ export const projectsData = [
         linkLinkedin: '',
         empresa: 'PESSOAL',
         modulo: 'BACKEND',
-        stack: ['CSharp', 'ASP.NET'],
+        stack: ['CSHARP', 'ASP.NET'],
         descricao: 'Desenvolvimento de uma API responsável por fornecer os serviços e funcionalidades necessários para suportar a aplicação. Ele lida com a lógica de negócios, interage com o banco de dados, autentica usuários e fornece uma API para comunicação com o frontend.',
         habilidades: [
             'Métodos HTTP utilizados em APIs RESTful para realizar operações CRUD (Create, Read, Update, Delete).', 
@@ -159,7 +159,7 @@ export const projectsData = [
         linkLinkedin: '',
         empresa: 'PESSOAL',
         modulo: 'FRONTEND',
-        stack: ['Angular'],
+        stack: ['ANGULAR', 'TYPESCRIPT'],
         descricao: 'Desenvolvimento de uma aplicação web de controle financeiro que permite aos usuários gerenciar suas finanças de forma eficaz.',
         habilidades: [
             'Registrar as fontes de renda',

@@ -1,27 +1,22 @@
 export const habilidadesData = [
-    'TODAS',
-    'API ORIENTADA A OBJETOS',
+    'TODOS',
     'ANGULAR',
+    'ASP.NET',
     'BOOTSTRAP',
     'CSHARP',
     'DOCKER',
     'EXPRESS',
     'JAVASCRIPT',
-    'JAVASCRIPT ASSÍNCRONO',
-    'JEST',
-    'MÉTODOS ÁGEIS',
     'MONGODB',
     'MYSQL',
     'NODEJS',
     'NOSQL',
-    'POO',
     'PYTHON',
     'REACT',
     'REDUX',
     'RTL',
     'TAILWIND',
     'TYPESCRIPT',
-    'CSHARP',
 ]
 
-export const alternativasData = [ 'TODAS', 'FUNDAMENTOS', 'FRONTEND', 'BACKEND', 'FULLSTACK']
+export const alternativasData = [ 'TODOS', 'FRONTEND', 'BACKEND', 'FULLSTACK']
