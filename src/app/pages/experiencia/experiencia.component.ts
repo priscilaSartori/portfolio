@@ -9,6 +9,6 @@ export class ExperienciaComponent {
   experience: string = "Sabios";
 
   changeExperience(event: any) {
-    this.experience = event.target.alt;
+    this.experience = event.target.value;
   }
 }
