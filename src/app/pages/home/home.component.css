@@ -26,6 +26,7 @@
 
 .home-info h2 {
     color: #1a2744;
+    
 }
 
 .home-img {
@@ -41,6 +42,7 @@
 
 @media screen and (max-width: 1050px) {
     .home {
+        width: 900px;
         flex-direction: column;
         margin-top: 50px;
     }
@@ -65,11 +67,20 @@
         width: 350px; 
         font: 500 40px Poppins,sans-serif;
     }
+
+    .home {
+        justify-content: center;
+    }
 }
 
 
 @media screen and (max-width: 420px) {
     .home-info h1 {
         font-size: 22px;
+    }
+
+    .home {
+        justify-content: center;
+        height: 60%;
     }
 }

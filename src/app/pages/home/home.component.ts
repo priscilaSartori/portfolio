@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  words: string[] = ['Desenvolvedora Web.', 'Desenvolvedora Front-End.', 'Desenvolvedora Back-End.', 'Desenvolvedora Full-Stack.'];
+  words: string[] = ['Web.', 'Front-End.', 'Back-End.', 'Full-Stack.'];
   currentWordIndex = 0;
   partialWord = '';
 
@@ -25,7 +25,9 @@ export class HomeComponent implements OnInit {
       this.partialWord += lastWord[index];
       index+=1;
     } else {
-      this.partialWord = this.partialWord.slice(0, -1); 
+      setTimeout(() => {
+        this.partialWord = this.partialWord.slice(0, -1);
+      }, 1000);
     }
     if (this.partialWord.length === 0 && index === length) {
       clearInterval(intervalId);

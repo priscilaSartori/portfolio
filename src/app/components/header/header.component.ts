@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,35 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  theme = false;
 
   constructor(private router: Router) { }
 
-  changeTheme() {
-    this.theme = !this.theme
-  }
-
-  changeHome() {
-    this.router.navigate(['']);
-  }
-
-  changeAbout() {
-    this.router.navigate(['/about']);
-  }
-
-  changeSkills() {
-    this.router.navigate(['/skills']);
-  }
-
-  changeExperiences() {
-    this.router.navigate(['/experience']);
-  }
-
-  changeEducation() {
-    this.router.navigate(['/education']);
-  }
-  
-  changeProjects() {
-    this.router.navigate(['/projects']);
-  }
 }
