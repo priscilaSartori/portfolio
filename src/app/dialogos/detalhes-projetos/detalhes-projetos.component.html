@@ -24,8 +24,7 @@
             </button>
         </div>
         <div class="projectInfo-details">
-            <h4>{{projects[projectId].empresa}}</h4>
-            <P>{{projects[projectId].descricao}}</P>
+            <p>{{projects[projectId].descricao}}</p>
             <h4>Habilidades desenvolvidas</h4>
             <ul *ngFor="let habilidade of projects[projectId].habilidades">
                 <li>{{habilidade}}</li>
